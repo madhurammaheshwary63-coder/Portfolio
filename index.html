@@ -1,0 +1,212 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header{
+      background: #222;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1{
+      font-size: 28px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #00adb5;
+    }
+
+    .hero{
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(to right, #00adb5, #393e46);
+      color: white;
+    }
+
+    .hero h2{
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero p{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn{
+      padding: 12px 25px;
+      border: none;
+      background: white;
+      color: #00adb5;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover{
+      background: #222;
+      color: white;
+    }
+
+    section{
+      padding: 60px 50px;
+    }
+
+    .about, .projects, .contact{
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .projects-container{
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card{
+      background: #eeeeee;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover{
+      transform: scale(1.05);
+    }
+
+    footer{
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    @media(max-width: 768px){
+      header{
+        flex-direction: column;
+      }
+
+      nav{
+        margin-top: 10px;
+      }
+
+      .hero h2{
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm Madhuram</h2>
+    <p>Web Developer | Student | Programmer</p>
+
+    <button class="btn" onclick="showMessage()">
+      Click Me
+    </button>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <br>
+
+    <p>
+      I am a passionate web developer who loves creating websites
+      using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <br>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <br>
+        <p>Simple personal portfolio website.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <br>
+        <p>Basic calculator using JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <br>
+        <p>Task manager with add and delete features.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <br>
+
+    <p>Email: madhuram@example.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showMessage(){
+      alert("Welcome to my portfolio website!");
+    }
+  </script>
+
+</body>
+</html>
